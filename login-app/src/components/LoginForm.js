@@ -3,9 +3,10 @@ import { TextInput, Button, Card, Text, ActivityIndicator } from "react-native-p
 import { View, StyleSheet, Alert, TouchableOpacity } from "react-native";
 import { useState } from "react";
 import { useAuth } from "../AuthContext";
+import { useNavigation } from "@react-navigation/native";
 
-const LoginForm = ({ navigation }) => {
-
+const LoginForm = () => {
+    const navigation = useNavigation()
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);

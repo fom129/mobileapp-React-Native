@@ -47,7 +47,7 @@ const HomeScreen = ({ navigation }) => {
       <View style={styles.content}>
         <Text style={styles.text}> ยินดีต้อนรับสู่แอปพลิเคชัน </Text>
         {user && (
-          <Text style={styles.userText}>/?N//: {user.email}</Text>
+          <Text style={styles.userText}>อีเมล: {user.email}</Text>
         )}
 
         <View style={styles.buttonContainer}>
